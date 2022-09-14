@@ -146,6 +146,7 @@ button {
   grid-template-columns: repeat(3 , 1fr);
   grid-gap: 20px;
   justify-content: space-around;
+  margin-bottom: 40px;
 }
 
 .card {
@@ -185,11 +186,18 @@ button {
 }
 
 @media only screen and (max-width: 700px) {
+  #question{
+    text-align: center;
+    padding: 0 5px;
+  }
+  #display{
+    padding-left: 10px;
+  }
   .box-container {
     padding: 0 20px;
     width: 100%;
   }
-  .card {
-    flex-direction: column;
-  }
+  #histories {
+    grid-template-columns: repeat(1 , 1fr);
+}
 }
